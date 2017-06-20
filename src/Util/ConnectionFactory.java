@@ -20,7 +20,7 @@ public class ConnectionFactory {
     private static final String DB_DRIVER="com.mysql.jdbc.Driver";      //数据库驱动
     private static final String DB_URL = "jdbc:mysql://localhost:3306/messagedb?useUnicode=true&characterEncoding=UTF-8";//连接数据库的URL地址
     private static final String DB_USERNAME = "root";                   //数据库的用户名
-    private static final String DB_PASSWORD ="admin";                   //数据库的密码
+    private static final String DB_PASSWORD ="system";                   //数据库的密码
 
 
 

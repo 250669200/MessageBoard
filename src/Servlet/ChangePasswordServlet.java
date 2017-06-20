@@ -25,7 +25,7 @@ public class ChangePasswordServlet extends HttpServlet {
         UserDAO userDAO=new UserDAO();
         PrintWriter pw=response.getWriter();
         HttpSession session=request.getSession(false);
-        User user=(User)request.getAttribute("user");
+        User user=(User)session.getAttribute("user");
         int id=user.getId();
         String oldpassword=request.getParameter("oldpassword");
         String newpassword=request.getParameter("newpassword");

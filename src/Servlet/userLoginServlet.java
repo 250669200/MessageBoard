@@ -28,8 +28,8 @@ public class userLoginServlet extends HttpServlet {
         String loginName=request.getParameter("loginName");
         String password=request.getParameter("password");
         User user=(User)userDAO.loginSelect(loginName,password);
-//        System.out.println(loginName+"....................."+password);
-//        System.out.println(user.getName()+"....................."+user.getTag()+"....................."+user.getId()+"....................."+user.getLimit());
+        System.out.println(loginName+"....................."+password);
+        System.out.println(user.getName()+"....................."+user.getTag()+"....................."+user.getId()+"....................."+user.getLimit());
         if(null!=user.getName() && 0==user.getTag()){
             session.setAttribute("user",user);
             pw.println("success");
